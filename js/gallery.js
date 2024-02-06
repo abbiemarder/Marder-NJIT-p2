@@ -72,6 +72,11 @@ $(document).ready(function () {
   // This initially hides the photos' metadata information
   $(".details").eq(0).hide();
   fetchJSON();
+  $(".moreIndicator").on("click", (e) => {
+    $(".moreIndicator").toggleClass("rot90");
+    $(".moreIndicator").toggleClass("rot270");
+  });
+
 });
 
 window.addEventListener(
@@ -122,3 +127,9 @@ function iterateJSON() {
     );
   }
 }
+
+$(document).ready(function () {
+  adjustNextPhotoPosition();
+  $(window).resize(adjustNextPhotoPosition); // Adjust position on window resize
+});
+

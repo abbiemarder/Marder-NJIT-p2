@@ -22,6 +22,7 @@ body {
 	position: relative;
 	width: 80%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .moreIndicator {
@@ -47,6 +48,10 @@ body {
 #nav {
 	clear: both;
 	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: 50px;
+	background-color: white;
 }
 
 #prevPhoto {
@@ -54,11 +59,22 @@ body {
 	width: 42px;
 }
 
+#prevPhoto:hover {
+	opacity: 80%;;
+}
+
 #nextPhoto {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	height: 42px;
 	width: 42px;
 }
 
+#nextPhoto:hover {
+	opacity: 80%;
+}
 .details p {
 	margin-top: 20px;
 }
@@ -72,16 +88,33 @@ body {
 Make it animate nicely. You'll need CSS3 for this*/
 .rot90 {
 	transform: rotateZ(90deg);
+	transition: transform 1s ease;
 }
 	
 /*Add CSS styles to rotate the element 180deg
 Make it animate nicely. You'll need CSS3 for this*/
 .rot180 {
-		transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+	transition: transform 1s ease;
 }
 
 /*Add CSS styles to rotate the element 270deg
 Make it animate nicely. You'll need CSS3 for this*/
 .rot270 {
-		transform: rotateZ(270deg);
+	transform: rotateZ(270deg);
+	transition: transform 1s ease;
 }
+
+
+ #photo {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden; /* Ensure that photos don't extend past the container */
+        text-align: center; /* Center align photos */
+
+    }
+    .thumbnail {
+        max-width: 100%; /* Ensure that photos fit entirely within the container */
+        height: auto; /* Maintain aspect ratio */
+        display: inline-block; /* Allow photos to be centered */
+    }
