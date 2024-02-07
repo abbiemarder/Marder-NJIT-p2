@@ -38,11 +38,20 @@ function swapPhoto() {
   //Access the img element and replace its source
   //with a new image from your images array which is loaded
   //from the JSON string
+  $(".location").text('Location: ' + mImages[mCurrentIndex].location);
+  $(".description").text('Description: ' + mImages[mCurrentIndex].description);
+  $(".date").text('Date: ' + mImages[mCurrentIndex].date);
   $("#photo").attr("src", mImages[mCurrentIndex].img);
   mCurrentIndex += 1;
   mCurrentIndex %= mImages.length;
 }
 
+function displayPhoto(){
+   $(".location").text("Location: " + mImages[mCurrentIndex].location);
+   $(".description").text("Description: " + mImages[mCurrentIndex].description);
+   $(".date").text("Date: " + mImages[mCurrentIndex].date);
+   $("#photo").attr("src", mImages[mCurrentIndex].img);
+}
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
@@ -75,6 +84,7 @@ $(document).ready(function () {
   $(".moreIndicator").on("click", (e) => {
     $(".moreIndicator").toggleClass("rot90");
     $(".moreIndicator").toggleClass("rot270");
+    $(".details").eq(0).toggle();
   });
 
 });
@@ -129,7 +139,17 @@ function iterateJSON() {
 }
 
 $(document).ready(function () {
-  adjustNextPhotoPosition();
-  $(window).resize(adjustNextPhotoPosition); // Adjust position on window resize
+  
+  // Click handler for next photo
+  $("#nextPhoto").click(function () {
+    mCurrentIndex = (mCurrentIndex + 1) % mImages.length; // Loop back to the first photo if at the end
+    displayPhoto(mCurrentIndex);
+  });
+
+  // Click handler for previous photo
+  $("#prevPhoto").click(function () {
+    mCurrentIndex = (mCurrentIndex - 1 + mImages.length) % mImages.length; // Loop back to the last photo if at the beginning
+    displayPhoto(mCurrentIndex);
+  });
 });
 
