@@ -1,58 +1,58 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/places/phi phi.jpg",
+            "imgLocation": "Thailand",
+            "description": "Phi Phi Islands",
+            "date": "12/25/2023"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/places/laos.JPG",
+            "imgLocation": "Laos",
+            "description": "Waterfalls, Laungprabang",
+            "date": "12/29/2023"
         },
         {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
-        },
-        {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
-        },
-        {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
-        },
-        {
-            "imgPath": "img/places/italy.jpg",
+            "imgPath": "img/places/lake como.jpg",
             "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
+            "description": "Lake Como",
+            "date": "06/16/2023"
         },
         {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
+            "imgPath": "img/places/sagrada.jpg",
+            "imgLocation": "Spain",
+            "description": "La Sagrada Familia, Barcelona",
+            "date": "04/20/2022"
         },
         {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
+            "imgPath": "img/places/ricepaddies.jpg",
+            "imgLocation": "Thailand",
+            "description": "Rice Paddies, Chiang Mai",
+            "date": "12/30/2019"
+        },
+        {
+            "imgPath": "img/places/atlantic city.JPG",
+            "imgLocation": "New Jersey",
+            "description": "Ferris Wheel, Atlantic City",
+            "date": "06/04/2022"
+        },
+        {
+            "imgPath": "img/places/colleseum.jpg",
+            "imgLocation": "Italy",
+            "description": "Colleseum, Rome",
+            "date": "04/15/2022"
+        },
+        {
+            "imgPath": "img/places/grand canyon.JPG",
+            "imgLocation": "Arizona",
+            "description": "Grand Canyon National Park",
+            "date": "07/03/2022"
+        },
+        {
+            "imgPath": "img/places/cirona spain.jpg",
+            "imgLocation": "Spain",
+            "description": "Cirona",
+            "date": "02/08/2021"
         },
         {
             "imgPath": "img/places/norway.jpg",
