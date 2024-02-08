@@ -84,7 +84,7 @@ $(document).ready(function () {
   $(".moreIndicator").on("click", (e) => {
     $(".moreIndicator").toggleClass("rot90");
     $(".moreIndicator").toggleClass("rot270");
-    $(".details").eq(0).toggle();
+    $(".details").eq(0).slideToggle('slow',animate());
   });
 
 });
